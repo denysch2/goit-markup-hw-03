@@ -25,6 +25,11 @@ ul {
 button {
     cursor: pointer;
 }
+.conteiner {
+    width: 1200px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
   
    body {
        font-family: 'Roboto', sans-serif;
@@ -63,6 +68,9 @@ button {
    
    /*~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~*/
    .header-logo {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 25px;
    font-family: 'Raleway';
    font-weight: 700;
    font-size: 26px;
