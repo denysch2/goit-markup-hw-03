@@ -66,8 +66,6 @@ img {
    }
    .list {
        list-style: none;
-       padding: 0px;
-       margin: 0px;
        
    }
    .features-hiden {
@@ -94,7 +92,7 @@ img {
  /*~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~*/
 
 .header {
-    border-bottom: 1px solid var(---primary--border-color);
+    border-bottom: 1px solid #ECECEC;
 }
 .header-list {
     display: flex;
@@ -175,28 +173,23 @@ img {
 
    .cap {
    background-color: var(--cap--bgr--color--);
-   padding-top: 200px;
-   padding-bottom: 200px;
    text-align: center;
    }
-.cap-cont {
-margin: auto;
-margin-bottom: 30px;
-width: 696px;
-}
    .cap-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+   
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
+ 
    letter-spacing: 0.06em;
    color: var(--primary--acent--btn--color--);
    text-transform: uppercase;
+
    }
    .cap-btn {
-    padding: 10px 19px 10px 10px;
-    align-items: center;
-    text-align: center;
-    font-family: inherit;
+   font-family: inherit;
    font-weight: 700;
    font-size: 16px;
    line-height: 1.88;
@@ -204,10 +197,6 @@ width: 696px;
    background-color: var(--cap--btn-bgr--color--);
    color: var(--primary--acent--btn--color--);
    cursor: pointer;
-   background: #2196F3;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
    }
    .cap-btn:hover,
    .cap-btn:focus{
@@ -215,14 +204,11 @@ border: none;
    color: var(--primary--acent--btn--color--); }
    
    /*~~~~~~~~~~~~~~~~~~~FEATURES~~~~~~~~~~~~*/
-   .features {
-    padding-top: 94px;
-    padding-buttom: 94px;
-   }
    .features-list {
     display: flex;
    }
    .features-title {
+    margin-top: 94px;
     margin-bottom: 10px;
    font-weight: 700;
    font-size: 14px;
@@ -231,10 +217,11 @@ border: none;
    }
    .features-text {
    color: var(--primary--header--color--);
-   padding-bottom: 94px;
+   margin-bottom: 94px;
    }
    
    /*~~~~~~~~~~~~~~~~~~~WORK~~~~~~~~~~~~*/
+ 
    .work-title {
     margin-bottom: 50px;
     font-weight: 700;
@@ -254,12 +241,12 @@ border: none;
    /*~~~~~~~~~~~~~~~~~~~TEAM~~~~~~~~~~~~*/
    .team {
        background-color: var(--team--bgr--color--);
-       padding-top: 94px;
    }
    .team-title {
-
+    padding-top: 94px;
+    padding-bottom: 50px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 0;
    font-weight: 700;
    font-size: 36px;
    line-height: 1.16;
@@ -283,8 +270,8 @@ border: none;
 border-radius: 0px 0px 4px 4px;
    }
    .team-our {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 10px;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
@@ -301,13 +288,12 @@ border-radius: 0px 0px 4px 4px;
    }
    /*~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~*/
    .footer{
-    padding-top: 60px;
    background-color: var(--footer--bgr--color--);
-    
    }
    .footer-logo {
     display: block;
-    margin-bottom: 28px;
+    padding-top: 60px;
+    padding-bottom: 28px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -321,7 +307,7 @@ border-radius: 0px 0px 4px 4px;
     }
    .footer-maps {
     display: block;
-    margin-bottom: 12px;
+    padding-bottom: 12px;
    font-style: normal;
    color: var(--primary--acent--btn--color--);
    }
@@ -331,7 +317,7 @@ border-radius: 0px 0px 4px 4px;
    color: var(--footer--link--);
    }
    .footer-mail {
-    margin-bottom: 12px;
+    padding-bottom: 12px;
    }
    .footer-tel {
     padding-bottom: 40px;
@@ -342,8 +328,8 @@ border-radius: 0px 0px 4px 4px;
    /*~~~~~~~~~~~~~~~~~~~PORTFOLIO~~~~~~~~~~~~*/
    .port-nav {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 50px;
+    margin-top: 94px;
+    margin-bottom: 50px;
    }
 
    
@@ -356,12 +342,11 @@ border-radius: 0px 0px 4px 4px;
    color: var(--primary--title--color--);
    background-color: var(--filter--bgr--color--);
    cursor: pointer;
-   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-   border-radius: 4px; 
+   border-radius: 4px;
    border: none;
-}
+   }
    .port-nav .item + .item {
-    padding-left: 8px;
+    margin-left: 8px;
    }
    .port-nav {
     display: block;
@@ -389,27 +374,31 @@ border-radius: 0px 0px 4px 4px;
    .port-list .item:nth-child(3n) {
    margin-right: 0px;
    }
+   .port-list .item:nth-child(-n +3) {
+    margin-bottom: 30px;
+   }
  
- .port-block {
- padding-left: 24px;
- padding-right: 24px;
-  padding-top: 20px;
-  margin-bottom: 4px;
-  padding-bottom: 20px;
-    border-right: 1px solid var(---primary--border-color); 
-    border-left: 1px solid var(---primary--border-color); 
-    border-bottom: 1px solid var(---primary--border-color);
- }
    .web-title {
-   
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-right: 24px;
+    padding-left: 24px;
        font-weight: 700;
        font-size: 18px;
        line-height: 2;
        letter-spacing: 0.06em;
        color: var(--primary--title--color--);   
-        }
+       border-right: 1px solid var(---primary--border-color); 
+       border-left: 1px solid var(---primary--border-color); 
+   }
    .web-pre-title {
+    padding-bottom: 20px;
    font-size: 16px;
+   padding-right: 24px;
+   padding-left: 24px;
    line-height: 1.87;
    color: var(--primary--header--color--);
+   border-right: 1px solid var(---primary--border-color); 
+   border-left: 1px solid var(---primary--border-color); 
+   border-bottom: 1px solid var(---primary--border-color); 
    }
